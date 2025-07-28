@@ -117,7 +117,11 @@
                             Style="{StaticResource PauseButton}" Click="PauseButton_Click" IsEnabled="False"/>
                     <Button x:Name="resetButton" Content="Reset" Width="100" Height="50"  Margin="10" 
                             Style="{StaticResource ResetButton}" Click="ResetButton_Click"/>
+                    
+                    
                 </StackPanel>
+                
+                
             </StackPanel>
         </Border>
 
@@ -127,5 +131,11 @@
                 
             </StackPanel>
         </Border>
+
+        <StatusBar Grid.Row="2" Background="{StaticResource DarkBlueBrush}">
+            <StatusBarItem>
+                <TextBlock x:Name="statusText" Foreground="{StaticResource TextBrush}"/>
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>
